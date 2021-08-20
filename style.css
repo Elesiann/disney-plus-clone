@@ -1,0 +1,102 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  border: none;
+  outline: none;
+}
+
+body {
+  width: 100%;
+  background: #0c111b;
+  position: relative;
+}
+
+/* ================================== NAVBAR ==================================  */
+.brand-logo {
+  height: 70px;
+}
+
+.navbar {
+  width: 100%;
+  height: 80px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 0 2rem;
+  background: #0c111b;
+  z-index: 9;
+  display: inline-flex;
+  align-items: center;
+}
+
+.nav-links {
+  margin-top: 1rem;
+  display: flex;
+  list-style: none;
+}
+
+.nav-links a {
+  text-decoration: none;
+  margin-left: 2rem;
+  text-transform: capitalize;
+  color: white;
+  opacity: 0.9;
+}
+
+.search-container {
+  display: block;
+  margin-left: auto;
+}
+
+.search-box {
+  border: none;
+  border-bottom: 1px solid #aaa;
+  background: transparent;
+  outline: none;
+  height: 2rem;
+  width: 15rem;
+  text-transform: capitalize;
+  font-size: 1.2rem;
+  color: white;
+  font-weight: 500;
+  transition: 0.5s;
+  margin-right: 1rem;
+}
+
+.search-box:focus {
+  width: 25rem;
+  border-color: #1f80e8;
+}
+
+.sub-btn {
+  background: #1f80e0;
+  height: 1.5rem;
+  padding: 0 18px;
+  color: #fff;
+  border-radius: 5px;
+  font-weight: 700;
+  font-size: 12px;
+  cursor: pointer;
+  margin-right: 1rem;
+  text-transform: uppercase;
+}
+
+.login-link {
+  color: white;
+  opacity: 0.9;
+  text-transform: uppercase;
+  font-size: 15px;
+  font-weight: 700;
+}
