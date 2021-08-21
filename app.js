@@ -17,7 +17,7 @@ const createSlide = () => {
     //anexando todos os elementos
     imgElement.appendChild(document.createTextNode(''))
     h1.appendChild(document.createTextNode(movies[slideIndex].name))
-    p.appendChild(document.createTextNode(movies[slideIndex].des))
+    p.appendChild(document.createTextNode(movies[slideIndex].desc))
     content.appendChild(h1)
     content.appendChild(p)
     slide.appendChild(content)
@@ -37,7 +37,7 @@ const createSlide = () => {
     sliders.push(slide)
 
     if (sliders.length) {
-        sliders[0].style.marginLeft = `calc(-${100 * (sliders.length - 2)} - ${30 * (sliders.length - 2)}px)`
+        sliders[0].style.marginLeft = `calc(-${100 * (sliders.length - 2)}% - ${30 * (sliders.length - 2)}px)`
     }
 }
 
@@ -47,4 +47,4 @@ for (let i = 0; i < 3; i++) {
 
 setInterval(() => {
     createSlide();
-}, 300);
+}, 3000);
